@@ -1,0 +1,530 @@
+/* TrashyPorn CSS */
+/* By /u/x_minus_one, with credit to Google and everyone I copy-and-pasted from. */
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+/* Header Stuff */
+/*--------------*/
+
+/* Header Image */
+#header {
+    height: 170px;
+    background: url(%%HeaderFlag%%) 0px 0px black;
+    background-position: 50% 75%;
+    background-attachment: fixed;
+    border: 0px;
+}
+
+/* Subreddit List */
+#sr-header-area {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 0px;
+}
+
+.sr-bar a {
+color: white;
+}
+
+a.subbarlink {
+    color: gray;
+}
+
+a.subbarlink:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.dropdown.srdrop .selected {
+    color: white;
+}
+
+/* RES Compatibility */
+#RESShortcutsSort, #RESShortcutsRight, #RESShortcutsLeft, #RESShortcutsAdd, #RESShortcutsTrash {
+    color: gray!important;
+    background: rgba(0, 0, 0, 1)!important;
+}
+
+#RESShortcutsEditContainer {
+    background: transparent!important;
+}
+
+/* Logo */
+.pagename {
+    font-size: 1px;
+    color: transparent;
+}
+
+.pagename a {
+  display: block;
+  width: 264px;
+  height: 111px;
+  background: url(%%LogoHeader%%) center center no-repeat;
+  text-align: center;
+  text-indent: 10000px;
+  overflow: hidden;
+}
+
+/* Hot, New, Top tabs */
+#header .tabmenu li a {
+    background-color: transparent; 
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    font-size: 10px;
+}
+
+#header .tabmenu li a:hover {
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+#header .tabmenu li.selected a { 
+    text-decoration: underline;
+    color: white;
+    font-size: 10px;
+    border: 0px;
+}
+
+
+/* Link Styling */
+/*--------------*/
+.link .entry li .comments {
+    visibility: visible;
+    opacity: 1.0;
+    color: black;
+    font-size: 10px;
+}
+#siteTable div.thing ul {
+    opacity: 0.4;
+}
+#siteTable div.thing:hover ul {
+    opacity: 1.0;
+}
+
+
+/* Search Box */
+/*------------*/
+#search input[type="text"] {
+    background-color:rgba(0,0,0,0);
+    border-width: 0px 0px 1px 0px;
+    border-color: black;
+}
+
+#searchexpando.infobar {
+    background-color: #FFC7C7!important;
+    border: 1px solid #B30000;
+    border-radius: 0px;
+}
+
+/* Pretty Submit Buttons */
+/*---------------------- */
+.morelink
+{
+    font-weight:normal;
+    letter-spacing:0;
+    background: navy;
+    border: none;
+    border-radius:0px;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    color: white;
+    z-index: 999999!important;
+}
+
+.morelink:hover
+{
+    background: #000034;
+    background-color: #000034;
+    border-color: #8D8D8D;
+}
+
+.morelink .nub 
+{
+    display: none;
+}
+
+.morelink 
+{
+    color:#FFF; 
+    font-family:Verdana, Arial, sans-serif; 
+    font-size:16px; 
+    width: 300px;
+}
+
+.morelink a, .morelink a:hover
+{
+    color: white;
+}
+
+.sidebox.submit-link .morelink::before 
+{
+    display: block;
+    clear: none;
+    content: "Submit Trashy Porn";
+    font-size: 95%;
+}
+
+.sidebox.submit-text .morelink::before 
+{
+    display: block;
+    clear: none;
+    content: "Submit a [Meta] Post";
+    font-size: 95%;
+}
+
+.sidebox.submit .morelink a 
+{
+    position: absolute;
+    top: 0;
+    padding-left: 1000px;
+    font-size: 0px;
+    text-align: right;
+    color: #56a6f7;
+}
+
+.sidebox.submit.submit-link {
+    width: 300px;
+}
+
+.sidebox.submit.submit-text
+{
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+.sidebox.create 
+{
+    display: none;
+}
+
+.sidebox.submit.disabled 
+{
+    display: none;
+}
+
+
+/* Comment Page Styling */
+/*----------------------*/
+
+.linkinfo {
+    background-color: #FFC7C7!important;
+    border: 1px solid #B30000;
+    border-radius: 0px;
+}
+
+
+/* Cool Report Button Stuff */
+/*--------------------------*/
+
+/* Themes moderator show reports box */
+.report-reasons {
+    background-color: #FFC7C7!important;
+    border: 1px solid #B30000;
+    border-radius: 0px;
+}
+
+/* Changes the "why are you reporting this?" text */
+.reason-prompt {
+    font-size: 0px;
+}
+
+.reason-prompt:before {
+    content: "Reports are for content that breaks subreddit rules. Make sure you leave a report reason in the ''other'' box. Otherwise, your report may be ignored.";
+    font-size: 12px;
+    font-weight: bold;
+}
+
+/* Changes the "report" button text */
+.action-thing {
+    font-size: 0px;
+}
+
+.action-thing:before {
+    font-size: 10px;
+    content: "tattle";
+    color: gray;
+}
+
+/* Changes the user report form style */
+.report-action-form {
+    background-color: #FFC7C7;
+    border: 1px solid #B30000;
+    border-radius: 0px;
+}
+
+/* Cool Flairs */
+/*-------------*/
+
+
+/* Background */
+/*------------*/
+
+/* Main content area */
+body {
+    background: #F9F9F9;
+}
+
+/* Sidebar */
+.side {
+    background: #ECECEC;
+}
+
+/* "Moderation Tools" */
+.icon-menu a {
+    background: #ECECEC;
+}
+
+/* "You are a moderator", "You are an approved submitter", "Show my flair" */
+.leavemoderator, .titlebox form.leavecontributor-button, form.toggle.flairtoggle {
+    background: #ECECEC;
+}
+
+/* Miscellaneous Stuff */
+/*---------------------*/
+
+/* Sidebar Image */
+h1.redditname {
+    font-size: 1px;
+    color: transparent;
+}
+
+h1.redditname a {
+  display: block;
+  width: 282px;
+  height: 81px;
+  background: url(%%TrashyPornSidebar%%) center center no-repeat;
+  text-align: center;
+  text-indent: 10000px;
+  overflow: hidden;
+  padding: 0px 1px; /* Leave at 0, distance from content area */
+  position: relative;
+  background-position: 50% 50%;
+}
+
+/* Styles Reddit Gold stuff */
+.comment-visits-box {
+    background-color: #ADD8E6!important;
+    border: 1px solid #0000B3;
+    border-radius: 0px;
+}
+
+/* Selfpost Thumbnails */
+.self .thumbnail { 
+    background: url(%%MudflapGirl%%) no-repeat 0 0; 
+}
+
+.self .thumbnail:hover { 
+    background: url(%%MudflapGirl2%%) no-repeat 0 0; 
+}
+
+/* Hides Downvote Arrows */
+.link .down { 
+    display: none; 
+}
+
+.link .downmod { 
+    display: none; 
+}
+
+.link .score.dislikes {
+    color: #C6C6C6;
+}
+
+/* RES Keyboard Navigation Selection Box */
+.res .RES-keyNav-activeElement, .res .commentarea .RES-keyNav-activeElement .md, .res .commentarea .RES-keyNav-activeElement.entry .noncollapsed {
+	background-color: #ECECEC !important;
+}
+
+.res .RES-keyNav-activeElement {
+	outline: 1px solid #DFDFDF !important; 
+	border-radius: 0px !important;
+}
+
+/* RES Userbar- shows fancy transparent userbar for RES users, non-RES users get regular one */
+.res #header-bottom-right {
+  bottom: 5px;
+  padding: 5px;
+  background: rgba(249, 249, 249, 0.65);
+  height: 15px;
+  border-radius: 0px;
+}
+
+.res #header-bottom-right:hover {
+  bottom: 5px;
+  padding: 5px;
+  background: rgba(249, 249, 249, 0.85);
+  height: 15px;
+  border-radius: 0px;
+}
+
+.res #userbarToggle {
+  width: 16px;
+  position: absolute;
+  /* top: -2px;
+  left: -5px; */
+  padding-right: 3px;
+  background: rgba(249, 249, 249, 1);
+  border-right: none;
+  border-radius: 0px;
+  font-size: 18px;
+  color: #111;
+}
+.res #userbarToggle.userbarShow {
+  left: -15px;
+  height: 15px;
+  width: 22px;
+  background: rgba(249, 249, 249, 0.85);
+}
+.res #userbarToggle.userbarShow:hover {
+  left: -15px;
+  height: 15px;
+  width: 22px;
+  background: rgba(249, 249, 249, 1);
+}
+
+
+/* Announcement Bar- Use #### in the sidebar for announcements. */
+.side .md h4:nth-of-type(1) {
+    list-style-type:none!important;
+    position: absolute;
+    font-size: 14px;
+    display: block;
+    top: 172px;
+    left: 10px;
+    margin:0;
+    background: url(%%AnnounceSprites%%) 0px -264px no-repeat #ADD8E6;
+    background-position: 0px 50%;
+    text-indent: 32px;
+    color: #555;
+    text-align: left;
+    border-radius: 0px;
+    border: 1px solid #0000B3;
+    width: 74%;
+    padding: 10px 10px 7px 10px;
+    white-space: nowrap;
+    overflow: hidden; 
+} 
+/* These are the positions of the different sprites.  Change the "0px 0px" values in background to change the sprite. */
+/* X in stop sign- 0px 0px */
+/* Red x- 0px -33px */
+/* Warning exclamation point- 0px -66px */
+/* I in circle- 0px -99px */
+/* Lightning- 0px -132px */
+/* Radioactive symbol- 0px -165px */
+/* Stop sign- 0px -198px */
+/* Thumbs up- 0px -231px */
+/* Warning symbol- 0px -264px */
+
+.side .md h4:nth-of-type(1) a {
+    color: #555;
+}
+
+.content {
+    margin-top:45px;
+} 
+
+/* CSS Sticky Comments */
+.comments-page .sitetable.nestedlisting {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;    
+}
+
+.comments-page .sitetable.nestedlisting>.thing.id-t1_addcommentidhere, 
+.comments-page .sitetable.nestedlisting>.thing.id-t1_cnlxefb
+{
+    -webkit-order: -1;
+    -ms-flex-order: -1;
+    order: -1;
+    border: solid 1px green !important;
+    border-radius: 0px;
+    background-color: #C2E8B3;
+    margin-bottom: 10px;
+padding-top: 8px;
+}
+
+/* NO PARTICIPATION */
+/*------------------*/
+/* ------------------------- */
+/* BEGIN COPY */
+
+
+
+/* "No Participation"-Mode, aka "Read Only"-Mode
+ * by /u/KortoloB
+ * /r/NoParticipation
+ * 
+ * Link people to np.reddit.com/r/YourSubreddit to show them a read-only version.
+ * Subscribers will see the full page, only non-subscribers will see the read-only version.
+ * This is of course by no means fool-proof, but it should work for the average user.
+ *  */
+
+body:lang(np):not(.subscriber) .arrow
+{ 
+    visibility: hidden !important;
+}
+
+body:lang(np):not(.subscriber) .usertext-edit,
+body:lang(np):not(.subscriber) .sidebox.submit,
+body:lang(np):not(.subscriber) .commentingAs,
+body:lang(np):not(.subscriber) .markdownEditor, 
+body:lang(np):not(.subscriber) a[onclick*="return reply(this)"],
+body:lang(np):not(.subscriber) .subButtons,
+body:lang(np):not(.subscriber) .helplink,
+body:lang(np):not(.subscriber) .titlebox .fancy-toggle-button.toggle > .option.add
+{
+    display: none !important;
+}
+
+body:lang(np):not(.subscriber) #siteTable:before
+{
+    content: "You have been linked to a read-only version of this subreddit. Please respect the community by not voting.";
+    display: block;
+    max-width: 800px;
+    background-color: #F6E69F;
+    padding: 5px 10px;
+    margin: 5px 305px 5px 0px;
+    border: 1px solid orange;
+    font-size: small;
+}
+
+body:lang(np):not(.subscriber) .entry.likes:not(.reddit-entry):before,
+body:lang(np):not(.subscriber) .entry.dislikes:not(.reddit-entry):before
+{
+    content: "Please do not vote or comment when you come from external subreddits.";
+    color: red;
+    font-size: large;
+    font-weight: bold;
+}
+
+/* Wiki protection */
+body.wiki-page:lang(np):not(.subscriber) span.pageactions a.wikiaction-edit:not(.wikiaction-current),
+body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform label[for='reason'],
+body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform input#wiki_revision_reason,
+body.wiki-page:lang(np):not(.subscriber) div.wiki-page-content form#editform input[type='submit']
+{
+    display: none !important;
+}
+
+
+
+/* END COPY */
+/* ------------------------- */
+
+/* Makes the CSS look decent */
+div.md p {
+    font-size: 13px;
+    line-height: 1.35;
+}
+ 
+div.md blockquote {
+    color: hsl(0,0%, 30%);
+    border-left-color: hsl(0,0%,50%);
+    background: hsl(0,0%,95%);
+}
